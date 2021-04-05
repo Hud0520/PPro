@@ -23,7 +23,7 @@ $(window).scroll(function(){
     //face up text-about
     var tas=$(window).height()-100;// Độ cao lăn phần tử đến tóp -100px
     if($(window).scrollTop()>tas){
-        $(".text-about p").css({"margin":"10px","opacity":"1"});
+        $(".text-about p").css({"margin":"0px 10px","opacity":"1"});
     }
     //face up
     var listfaceup= $(".faceup");
