@@ -136,11 +136,10 @@ body{
     margin: 100px 0px;
 }
 .allsv .icon-box{
-    width: 175px;
     height: 175px;
-    margin: 20px 0;
+    margin: 10px 0px;
     text-align: center;
-    padding:50px 0;
+    padding:40px 20px ;
     color: #000;
     transition-duration: 0.5s;
     border: 1px solid rgba(0, 0, 0, 0.08);
