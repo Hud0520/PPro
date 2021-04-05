@@ -1,0 +1,311 @@
+@import url(all.css);
+@import url(header.css);
+@import url(basic.css);
+@import url(slider.css);
+@import url(gallery.css);
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500&family=Nunito&family=Recursive:wght@700&display=swap');
+
+body{
+    font-family: 'Nunito', sans-serif !important;
+    
+}
+/*Tìm kiếm*/
+#myinput{
+    position: fixed !important;
+    overflow: hidden;
+    transition-duration: 0.5s;
+    position: sticky;
+    background: linear-gradient(rgba(2, 2, 2, 0.5),rgba(2, 2, 2, 0.5)), url("../img/ipbg.jpg") top center;
+    background-size: cover;
+    height: 0vh;
+    z-index: 99;
+    width: 100%;
+}
+
+#myinput .form-control{
+    background-color: rgba(0, 0, 0, 0) !important;
+    border-radius: 0rem !important;
+}
+#myinput #hide{
+    color: #fff !important;
+}
+#myinput .form-control{
+    color: white !important;
+}
+#myinput input::-webkit-input-placeholder {
+    color: #fff;
+  }
+  
+  /* Firefox 19+ */
+  #myinput input::-moz-placeholder {
+    color: #fff;
+  }
+  
+  /* IE 10+ */
+  #myinput input:-ms-input-placeholder {
+    color: #fff;
+  }
+  
+  /* Firefox 18- */
+  #myinput input:-moz-placeholder {
+    color: #fff;
+  }
+/*-----------*/
+/*About*/
+.text-about p{
+    position: absolute;
+    padding: 30px 10px 10px 30px;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 15%;
+    left: 10%;
+    right: 5%;
+    margin: 10px -10px 10px 30px;
+    font-weight: 500;
+    color: #fff;
+    transition-duration:1s ;
+    opacity: 0;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.288);
+}
+.text-about img{
+    position: relative;
+    height: 60vh;
+    object-fit: cover;
+    opacity: 1;
+
+}
+/*-----*/
+/*hug*/
+#hug{
+    width: 100%;
+    height:100vh;
+    background: url("../img/hero.jpg") top center;
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;
+}
+#hug:before{
+    content: "";
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+#hug .container{
+    padding-top: 70px;
+}
+#hug h1{
+    margin:0 0 20px 0;
+    font-size: 48px;
+    font-weight: 700px;
+    line-height: 56px;
+    color: #fff;
+}
+#hug h2{
+    color: #eee;
+    margin-bottom: 30px;
+    font-size: 24;
+    width: 50vw;
+}
+#hug .btn-get-started{
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    display: inline-block;
+    padding: 10px 28px;
+    transition: 0.5s;
+    border: 2px solid #fff;
+    color: #fff;
+}
+#hug .btn-get-started:hover{
+    background-color: #cc1616;
+    border-color: #cc1616;
+}
+/*About*/
+#about{
+    padding-bottom: 30px;
+    margin:50px 0px;
+}
+/*Services*/
+.allsv{
+    margin: 100px 0px;
+}
+.allsv .icon-box{
+    width: 175px;
+    height: 175px;
+    margin: 20px 0;
+    text-align: center;
+    padding:50px 0;
+    color: #000;
+    transition-duration: 0.5s;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+}
+.icon-box i{
+    color:#fff;
+    background-color: #cc1616;
+    padding: 10px;
+    font-size: 25px;
+    box-shadow:-5px -5px #cc161633;
+    margin-bottom: 30px;
+}
+.icon-box:hover{
+    padding-top: 40px;
+    color: #fff;
+    background-color: #cc1616;
+}
+.icon-box:hover i{
+    background-color: #fff;
+    color: #cc1616;
+    box-shadow:-5px -5px rgba(255, 255, 255, 0.336);
+}
+/*cta*/
+#cta{
+    background: linear-gradient(rgba(2, 2, 2, 0.5), rgba(0, 0, 0, 0.5)), url("../img/bg2.jpg") center;
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 120px 50px;
+}
+#cta h3{
+    color: #fff;
+    font-size: 30px;
+    font-weight: 500;
+}
+#cta p{
+    color: #fff;
+    font-size: 22px;
+}
+/*Contact*/
+#contact .box{
+    color: #444;
+    transition-duration:0.9s ;
+    margin-top: 30px;
+    opacity: 0;
+}
+#contact .box i{
+    font-size: 32px;
+    width: 50px;
+    height: 50px;
+    color: #cc1616;
+    border-radius: 50%;
+    padding: 8px;
+    border: 2px dotted #f5a0a0;
+}
+#contact .box h3{
+    font-size: 20px;
+    color: #777;
+    font-weight: 700;
+    margin: 10px 0;
+}
+#contact .box p{
+    font-size: 14px;
+}
+.form-control{
+    border-radius: 0 !important;
+}
+.form-control:focus{
+    box-shadow: none !important;
+}
+
+.btn-send{
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    display: inline-block;
+    padding: 10px 28px;
+    transition: 0.5s;
+    border: none;
+    color: #fff;
+    background-color: #cc1616;
+}
+.btn-send:hover{
+    background-color: #cc16169d;
+}
+/*footer*/
+
+#footer{
+    background-color: #0c0c0c;
+    padding: 10px 0 30px 0;
+    color: #fff;
+    font-size: 14px;
+}
+#footer .finfor{
+    background-color: #191919;
+    color: #fff;
+    border-top: 4px solid #cc1616;
+    text-align: center;
+    padding: 30px 20px;
+}
+#footer h3{
+    font-size: 36px;
+    margin-bottom: 20px;
+    padding: 2px 0 2px 0;
+    font-weight: 700;
+}
+#footer p{
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 0;
+}
+#footer .finfor a{
+    font-size: 16px;
+    background-color: #262626;
+    color: white;
+    padding: 8px;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    line-height: 1;
+    margin:30px 2px 0 2px ;
+}
+#footer .finfor a:hover{
+    background-color: #cc1616;
+}
+#footer .list-group a{
+    color: #fff;
+    transition: 0.3s;
+    line-height: 1;
+    padding: 10px 0;
+    font-size: 16px;
+}
+#footer .list-group a:hover{
+    color: #ed5b5b;
+}
+#footer .mlink i{
+    color: #ed5b5b;
+    padding-left: 2px;
+}
+#footer h4{
+    font-size: 20px;
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+	
+}
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+	.text-about img{
+        margin-bottom: 60px;
+    }
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .text-about p{
+        width: 110%;
+    }
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+	
+}
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+	
+}

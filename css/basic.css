@@ -1,0 +1,59 @@
+a:hover{
+    text-decoration: none !important;
+}
+.active a{
+    background-color: #cc1616 !important;
+}
+.video-fluid{
+    width: 100%;
+}
+.w-50{
+    width: 50vw;
+}
+.ml-50{
+    margin-left: 5%;
+}
+.noscroll {
+    overflow-y:scroll ;
+    height: 100%;
+    position: fixed;
+}
+.faceup{
+    position:relative;
+    transition-duration:1s ;
+    top:20px;
+    opacity: 0;
+}
+
+/*title shadow*/
+.title-shadow{
+    text-align: center;
+    position: relative;
+    padding: 30px 0;
+}
+.title-shadow h2{
+    font-size: 32px;
+    font-weight: 700;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 2;
+}
+.title-shadow span{
+    position: absolute;
+    top: -5px;
+    color: #f4f4f4;
+    left: 0;
+    right: 0;
+    font-weight: 700;
+    font-size: 52px;
+    text-transform: uppercase;
+}
+.title-shadow p{
+    color: rgba(0, 0, 0, 0.5);
+}
+/*---------*/
+.space{
+    height: 50px;
+    background-color: #f2f2f2;
+}
+
