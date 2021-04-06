@@ -9,9 +9,9 @@
    
 }
 .carousel-item.active{
-    transition: -webkit-transform 0.9s ease-in-out;
-    transition: transform 0.9s ease-in-out;
-    transition: transform 0.9s ease-in-out, -webkit-transform 0.9s ease-in-out;
+    transition: -webkit-transform 1.2s ease-in-out;
+    transition: transform 1.2s ease-in-out;
+    transition: transform 1.2s ease-in-out, -webkit-transform 1.2s ease-in-out;
     opacity: 1;
 }
 .carousel-caption {
@@ -30,13 +30,16 @@
 .active .carousel-caption{
     opacity: 0.8;
     top:20% !important;
+    transition-duration: 1s;
+    transition-delay: 1s;
+    
 }
 .carousel-item img{
     position: relative;
     height: 360px;
     width: 100%;
     object-fit: cover;
-    transition-duration:1s ;
+    transition-duration:1.5s ;
     margin-top: -10%;
 }
 .active img{
@@ -47,15 +50,16 @@
 .active.carousel-item-left img {
   -webkit-transform: translateX(-10%);
   transform: translateX(-10%);
-  transition-duration: 2s;
+  transition-duration: 1s;
   opacity: 0;
 }
 .carousel-item-prev .carousel-caption:not(.carousel-item-right),
 .active.carousel-item-left .carousel-caption {
   -webkit-transform: translateX(10%);
   transform: translateX(10%);
-  transition-duration: 2s;
+  transition-duration: 1s;
   opacity: 0;
+  transition-delay: 0s;
 }
 
 /* Extra small devices (portrait phones, less than 576px) */
