@@ -1,15 +1,7 @@
 .slider{
     width: 50%vh !important;
 }
-.carousel-control-prev,
-.carousel-control-next{
-    position: relative !important;
-    background-color: black;
-    margin: 5px;
-    padding: 10px 0px;
-    width: 40px !important;
-    border-radius: 50%;
-}
+
 .carousel-item{
     opacity: 0;
     display: block !important;
@@ -42,6 +34,26 @@
     height: 360px;
     width: 100%;
     object-fit: cover;
+    transition-duration:1s ;
+    margin-top: -10%;
+}
+.active img{
+    margin-top: 0;
+}
+
+.carousel-item-prev img:not(.carousel-item-right),
+.active.carousel-item-left img {
+  -webkit-transform: translateX(-10%);
+  transform: translateX(-10%);
+  transition-duration: 2s;
+  opacity: 0;
+}
+.carousel-item-prev .carousel-caption:not(.carousel-item-right),
+.active.carousel-item-left .carousel-caption {
+  -webkit-transform: translateX(10%);
+  transform: translateX(10%);
+  transition-duration: 2s;
+  opacity: 0;
 }
 
 /* Extra small devices (portrait phones, less than 576px) */
