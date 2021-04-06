@@ -1,5 +1,6 @@
 .slider{
-    width: 50%vh !important;
+    height: 420px;
+    
 }
 
 .carousel-item{
@@ -31,6 +32,7 @@
     top:20% !important;
 }
 .carousel-item img{
+    position: relative;
     height: 360px;
     width: 100%;
     object-fit: cover;
