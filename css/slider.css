@@ -41,9 +41,11 @@
     object-fit: cover;
     transition-duration:1.5s ;
     margin-top: -10%;
+    opacity: 0;
 }
 .active img{
     margin-top: 0;
+    opacity: 1;
 }
 
 .carousel-item-prev img:not(.carousel-item-right),
